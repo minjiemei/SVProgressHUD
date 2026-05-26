@@ -351,8 +351,11 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 /// Shows a custom image with the provided status message.
 /// @param image The custom image to be displayed.
 /// @param status The message to accompany the custom image.
-+ (void)showImage:(nonnull UIImage*)image status:(nullable NSString*)status;
++ (void)showImage:(nullable UIImage*)image status:(nullable NSString*)status;
 
+/// Shows a text message without image
+/// @param status The message to be displayed
++ (void)showWithText:(nullable NSString *)status;
 /// Sets the offset from the center for the HUD.
 /// @param offset The UIOffset value indicating how much the HUD should be offset from its center position.
 + (void)setOffsetFromCenter:(UIOffset)offset;
